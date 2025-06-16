@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Echoes Flipbook</title>
+  <link rel="stylesheet" href="assets/flipbook.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/turn.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #flipbook {
+      width: 90vw;
+      height: 90vh;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div><img src="assets/page1.jpg" style="width:100%; height:auto;"></div>
+    <div><img src="assets/page2.jpg" style="width:100%; height:auto;"></div>
+  </div>
+
+  <script>
+    $('#flipbook').turn({
+      width: '100%',
+      height: '100%',
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>
